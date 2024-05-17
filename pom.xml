@@ -23,28 +23,9 @@
         <java.version>22</java.version>
     </properties>
 
-
-    <dependencies>
-
-    </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-devtools</artifactId>
-                <scope>runtime</scope>
-                <optional>true</optional>
-            </dependency>
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <optional>true</optional>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
+    <modules>
+        <module>lib_utils</module>
+    </modules>
 
     <build>
         <plugins>
@@ -63,4 +44,29 @@
         </plugins>
     </build>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <scope>runtime</scope>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+    </dependencies>
 </project>
